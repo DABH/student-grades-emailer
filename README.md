@@ -40,7 +40,7 @@ There are several important configuration options that must be specified when ru
 * `subject` - the subject of the email sent to students.  This may be customized as desired inside the `sendEmails()` function.
 * `shouldSendRow(row)` - this function returns a bool whether or not an email should be sent for a particular row.  For example, you may only want to send emails to students whose Quiz 1 score was below a 50.  Or you may want to only send scores to students who are still enrolled in the class.
 
-##Assumptions
+## Assumptions
 
 student-grades-emailer makes fairly minimal assumptions about the format of your spreadsheet:
 
@@ -49,7 +49,7 @@ student-grades-emailer makes fairly minimal assumptions about the format of your
 * Every student has an email address entered in the email column
 * If a grade field is blank, that value should be replaced by a 0 (this behavior may be changed by editing the expression `row[config.assignmentCols[j]]||"0"` in `sendEmails()`)
 
-##Example
+## Example
 
 `student-grades-emailer.gs` is configured by default with some example options:
 
@@ -66,7 +66,7 @@ student-grades-emailer makes fairly minimal assumptions about the format of your
 * There is extra information we don't use contained in some columns, and potentially some rows
 
 
-##License etc.
+## License etc.
 
 student-grades-emailer, this repository, and everything therein is released under the license specified in LICENSE.md.
 
